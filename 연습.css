@@ -1,0 +1,90 @@
+.block_area {
+    
+    /* 1. 사이즈 */
+    width: 708px;
+    height: 108px;
+    background-color: aqua;
+
+
+    /* 2. 정렬 */
+    display: flex;
+    align-items: center;
+    
+    /* 가운데로 붙이기 */
+    justify-content: center;
+    
+    /* 왼쪽으로 딱 붙이기 */
+    /* justify-content: flex-start; */
+
+}
+
+
+.block_left_area {
+ 
+    /* 1. 사이즈 */
+    width: calc(708px - 6px);
+    height: calc(108px - 6px);
+    background-color: lawngreen;
+
+
+    
+}
+
+
+
+.block_left_area {
+
+    /* 1. 사이즈 */
+    width: 456px;
+    height: 106px;
+    background-color: lawngreen;
+    
+    
+}
+
+
+.block_right_area {
+    
+    /* 1. 사이즈 */
+    width: 250px;
+    height: 106px;
+    background-color: rebeccapurple;
+    
+}
+
+.block_left_1st_content_area {
+
+    /* 1. 사이즈 */
+    width: 456px;
+    height: 35.4px;
+
+    
+    background-color: orange;
+
+}
+
+.block_left_2nd_content_area {
+
+    /* 1. 사이즈 */
+    width: 456px;
+    height: 35.4px;
+
+    
+    background-color: steelblue;
+
+}
+
+
+.block_left_3rd_content_area {
+
+    /* 1. 사이즈 */
+    width: 456px;
+    height: 35.4px;
+
+    
+    background-color: tan;
+
+}
+
+
+

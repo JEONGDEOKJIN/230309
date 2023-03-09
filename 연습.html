@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./연습.css">
+</head>
+<body>
+    
+    <!-- a태그의 href에 #을 작성하면 페이지의 최상단으로 이동 -->
+    <!-- a태그의 href에 '# + 태그의 아이디' 를 작성하면 해당 태그로 스크롤 이동 -->
+
+
+    <!-- 여기를 클릭하면 -> 밑으로 슉 이동함 -->
+    <a href="#move_down"> 이걸 누르면 이동할까? </a>
+
+    <!-- 여기는 점프 하는 곳  -->
+    <h1> 이곳을 jump! 해서~ </h1>
+    <img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/1q2r/image/ja0uBtK1CFsvJN6LLJ42ThXJMAM.jpg" alt="">
+    <img src="https://t4.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/1q2r/image/W_3XKP0hStg_ft4GneHatHt7Rdw.jpg" alt="">
+    <img src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/1q2r/image/j1i8fc8NMniJ0rwPwgzafdTwIbQ.jpg" alt="">
+
+    <!-- 좌잔, 여기로 도착 ✅✅ -->
+    <div id="move_down">
+        <p>도차악~ 이동 완료~ 🤟🤟🤟🤟🤟</p>
+    </div>
+    
+
+
+    <!-- 1. area 를 우선 잡자 
+            1) 이때, '영역 설정' 의 문제가 나온다. 
+                - '영역 설정' 을 비율로 해야 하나? / 지금까지 비율로 하면 나중에 꼬이는 경우가 좀 있었음.
+                - 우선, 'px' 로 ✅ 
+                - 매번, 사이즈를 적을 때 고민이 돼. 😥😥😥😥😥 
+                    - 언제 비율을 써야 하지 😥😥😥😥😥😥 
+                    - 우선 '절대값 px' 가 안정적
+                    - 6px 씩 뺀다고 생각 ⭐⭐⭐ 
+                        ⭐⭐⭐⭐⭐⭐ 이렇게 빼기를 해줘도 될 것 같아 ⭐⭐⭐⭐⭐ 
+                        width: calc(708px - 6px);
+                        height: calc(108px - 6px);  
+
+            2) 이때, 개발자 도구에서 margin, padding 을 보고 정확하게 파악하는거, 해야 함.    
+
+        
+        2. 이 중간은 모르겠어.... 
+            - 중간이 상황에 따라서 달라져
+            - 확실한 건, 
+                1) 사진 자체가 들어가는 imag 태그 (img tag? p tag?), 
+                2) 그걸 담고 있는 것(container) 
+                3) container 가 여러개면, wrap? 
+            
+        3. - 우선, 이거에 근거해서 '목차' 를 짤 수 있어 ⭐⭐⭐⭐⭐ 
+
+        
+        4. 이거에 근거해서 '목차' 를 짠다면, '태그' 는 어디에 있는거야? 태그 셀렉터는 언제써? ⭐⭐⭐
+            - 태그 셀렉터가 할 수 있는 역할은 하게 해야 함
+            - 태그 셀렉터가 필요한 상황은 = 기능과 기능을 건너 뛴! 모든 기능에 적용할 때 ⭐⭐⭐⭐⭐⭐
+        
+
+        5. area 영역 틀을 짤 때, '개발자 도구 ⭐⭐⭐⭐⭐' 로 확인하면서 하는게 중요
+
+        
+        ch. 필요한 블록기능 
+        1) 가운데로 오게 하기 ⭐⭐⭐
+        2) 이걸 만들었으면 -> 다른 곳에서도 쓸 수 있게 잘 만들어놓기 ⭐⭐⭐⭐⭐ 
+
+        
+        -->
+
+
+
+
+
+    <div class="block_area">
+
+        <!-- 1. 왼쪽 area : 글  -->
+
+        <div class="block_left_area">
+
+            <!-- 1) 첫 번째 제목 영역 or container -->
+
+            <div class="block_left_1st_content_area">
+
+                
+                
+                <!-- a) 글 넣기 p 태그 (or head 태그) -->
+                
+                <div class="block_left_title_container">
+                    
+                    <div class="block_left_title_content">
+                        
+                        <p class="block_title_p_tag">
+                            [경일게임아카데미] 게임기획 1개월차 보드게임 (1팀) 포트폴리오
+                        </p>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                
+            </div>
+            
+            <!-- 2) 두 번째 제목 영역 or container -->
+
+            <div class="block_left_2nd_content_area">
+
+
+            </div>
+
+    
+                <!-- a) 글 넣기 p 태그 (or head 태그) -->
+            
+            <!-- 3) 세 번째 제목 영역 or container -->
+
+            <div class="block_left_3rd_content_area">
+
+
+            </div>
+
+    
+                <!-- a) 글 넣기 p 태그 (or head 태그) -->
+
+        </div>
+
+    
+
+
+        <!-- 2. 오른쪽 area : 사진 -->
+
+        <div class="block_right_area">
+
+
+        </div>
+
+            <!-- 1) 사진 container -->
+
+                <!-- a) img 태그 -->
+
+    </div>
+
+
+
+
+</body>
+</html>
