@@ -19,20 +19,91 @@
 }
 
 
+.block_left_wrap {
+    /* background-color: red; */
 
-.block_left_title_container {
-    background-color: crimson;
+    width: 458px;
+    height: 100px;
 
-    width: calc(708px - 6px);
-    height: calc(108px - 6px);
-
-    /* 가운데로 정렬 시키기 */
     display: flex;
     flex-direction: column;
     align-items: center;
 
+}
+
+
+.block_left_title_container {
+    background-color: chartreuse;
+
+    /* 이건 프로젝트 별로 다름 */
+    width: 452px;
+    height: 50px;
+
+    /* 가운데로 정렬 시키기 ⭐⭐⭐ 모든 container 에는 이게 들어가야 함
+        ✅ 이렇게 가운데 정렬이 디폴트
+        ✅ 디폴트면, 클래스로 정해두고, > 다른 걸 별도 클래스를 정해서?*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.block_left_desc_container {
+    /* background-color: blue;  */
+    width: 452px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.block_left_desc_container {
+
+    /* background-color: thistle; */
+    width: 452px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.block_title_p_tag {
+
+    width: 700px;
+    height: 100px;
+
+    /* 글씨 디자인 = 만들어진게 있음 ✅ 이것도 건 by 건 */
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 24px;
+    margin-bottom: 2px;
+    
+
+
+    white-space: nowrap;
+    /* 넘어가면, 사라지게 하기 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    
 
 }
+
 
 
 
@@ -41,7 +112,7 @@
     /* 1. 사이즈 */
     width: calc(708px - 6px);
     height: calc(108px - 6px);
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
 
     /* 가운데로 정렬 시키기 */
     display: flex;
@@ -58,7 +129,7 @@
     /* 1. 사이즈 */
     width: 456px;
     height: 106px;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     
     
 }
@@ -80,7 +151,7 @@
     height: 35.4px;
 
     
-    background-color: orange;
+    /* background-color: orange; */
 
 }
 
@@ -91,7 +162,21 @@
     height: 35.4px;
 
     
-    background-color: steelblue;
+    /* background-color: steelblue; */
+
+}
+
+
+.p_tag_left_desc {
+
+        width: 240px;
+        /* 이건 일렬로 있게 하는 것  */
+        white-space: nowrap;
+
+        /* 넘어가면, 사라지게 하기
+                😥 아 이게 잘 안 먹는데  */
+        overflow: hidden;
+        text-overflow: ellipsis;
 
 }
 
@@ -103,7 +188,7 @@
     height: 35.4px;
 
     
-    background-color: tan;
+    /* background-color: tan; */
 
 }
 

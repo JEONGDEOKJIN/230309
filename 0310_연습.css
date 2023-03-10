@@ -1,0 +1,201 @@
+
+
+
+/* -----------------------기본 설정 START -------------------------- */
+
+
+
+/* 1️⃣ 전체 걸기  */
+* {
+    box-sizing: border-box;
+
+}
+        
+    
+/*  2️⃣ 태그 걸기 */
+
+/* img 태그에 걸어주는것 */
+img {
+
+    /* 사진 비율 조정은 container 에서 하기 (실익 비교는 하면서 진행) 🟧  */
+    width: 100%;
+    height: 100%;
+
+    /* 원본 사진이 crop 되어서 나오는 느낌 (이걸 해야, 안 찌그러짐) */
+    object-fit: cover;
+
+}
+        
+        
+/* p 태그 에 걸어주기 */
+p {
+    /* 무조건 1줄로 써지게 하기 ✅✅  */
+    width: 100%;
+    height: 100%;
+
+    color: black;
+
+    /* 이건 일렬로 있게 하는 것  */
+    white-space: nowrap;
+
+    /* 넘어가면, 사라지게 하기
+            😥 아 이게 잘 안 먹는데  */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+
+
+        
+    /* 가운데로 정렬 시키기 ⭐⭐⭐ 모든 container 에는 이게 들어가야 함
+    ✅ 이렇게 가운데 정렬이 디폴트
+    ✅ 디폴트면, 클래스로 정해두고, > 다른 걸 별도 클래스를 정해서?*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+        
+
+
+/* 3️⃣ 클래스 걸기 */
+
+/* container 레벨에 거는 것 
+    class 이름을 container 레벨로 지어준다. 
+    img 태그, p 태그 부모에 건다. */
+
+.container {
+    /* 영역 확인 위한 용도 */
+    /* background-color: chartreuse; */
+
+    /* 이건 프로젝트 별로 다름 
+            ✅ 그러면, 이제, 추가적으로 만들면, '사이즈' 를 확인하면 된다. */
+    width: 50px;
+    height: 500px;
+    
+
+    /* 가운데로 정렬 시키기 ⭐⭐⭐ 모든 container 에는 이게 들어가야 함
+        ✅ 이렇게 가운데 정렬이 디폴트
+        ✅ 디폴트면, 클래스로 정해두고, > 다른 걸 별도 클래스를 정해서?*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
+
+        
+        
+/* -----------------------기본 설정 END -------------------------- */
+
+.block_area {
+    width: 718px;
+    height: 118px;
+    /* background-color: aquamarine; */
+}
+
+
+
+.frame {
+
+    width: 708px;
+    height: 108px;
+
+    border: 1px solid rgba(55,53,47,.16);
+   
+}
+
+
+.wrap_left {
+
+    width: 466px;   
+    height: 106px;
+    /* background-color: gray; */
+
+    display: flex;
+    align-items: flex-start;
+
+
+}
+
+
+.container_left_title {
+
+    width: 440px;
+    height: 34px;
+    background-color: tan;
+    
+    /* 가운데로 정렬 시키기 ⭐⭐⭐ 모든 container 에는 이게 들어가야 함
+        ✅ 이렇게 가운데 정렬이 디폴트
+        ✅ 디폴트면, 클래스로 정해두고, > 다른 걸 별도 클래스를 정해서?*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+
+}
+
+
+.container_left_desc {
+    width: 430px;
+    height: 32px;
+    background-color: deeppink;
+
+    
+}
+
+
+.p_tag_left_text {
+
+    width: 430px;
+    height: 24px;
+    font-size: 12px;
+
+    line-height: 16px;
+    /* height: 32px; */
+    /* overflow: hidden; */
+
+        
+       /* 가운데로 정렬 시키기 ⭐⭐⭐ 모든 container 에는 이게 들어가야 함
+        ✅ 이렇게 가운데 정렬이 디폴트
+        ✅ 디폴트면, 클래스로 정해두고, > 다른 걸 별도 클래스를 정해서?*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    
+    
+}
+
+
+.p_tag_left_desc {
+    width: 430px;
+    height: 32px;
+    background-color: gold;
+
+}
+
+
+.container_left_link {
+    width: 253px;
+    height: 26px;
+    /* background-color: chartreuse; */
+
+}
+
+.p_tag_link {
+    background-color: blue;
+
+    
+       /* 가운데로 정렬 시키기 ⭐⭐⭐ 모든 container 에는 이게 들어가야 함
+        ✅ 이렇게 가운데 정렬이 디폴트
+        ✅ 디폴트면, 클래스로 정해두고, > 다른 걸 별도 클래스를 정해서?*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+}
