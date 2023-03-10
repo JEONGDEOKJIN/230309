@@ -1,0 +1,18 @@
+.image_size {
+    width: 1000px;
+    height: 1000px;
+    background-color: green;
+    
+}
+
+
+.text_align_center {
+    
+    /* 가운데로 정렬 시키기 ⭐⭐⭐ 모든 container 에는 이게 들어가야 함
+    ✅ 이렇게 가운데 정렬이 디폴트
+    ✅ 디폴트면, 클래스로 정해두고, > 다른 걸 별도 클래스를 정해서?*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }

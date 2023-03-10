@@ -60,13 +60,95 @@ p {
 
 /* -----------------------기본 설정 END -------------------------- */
 
-/* 예시  */
 
-/* ✅ 이곳에 개발자 도구 사이즈 기재 
-        개발자 도구 = 사용자가 눈에 보이는 사이즈 =  708 x 108 */
-/* .notion_block_border {
+/* 708 x 108 */
+.notion_block_border {
 
     width: 708px;
     height: 108px;
 
-    border: 1px solid rgba(55,53,47,.16); */
+    border: 1px solid rgba(55,53,47,.16);
+
+    display: flex;
+
+}
+
+
+/* 456 x 106 , 왼쪽 */
+.left_text_area {
+    width: 456px;
+    height: 106px;
+    /* background-color: aqua; */
+
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 250 x 106 */
+.right_image_area {
+    width: 250px;
+    height: 106px;
+    background-color: royalblue;
+}
+
+
+/* 428 x 24 */
+.left_text_title_area {
+    width: 428px;
+    height: 24px;
+    /* background-color: yellow; */
+
+    justify-content: flex-start;
+}
+
+
+/* 428 x 32 */
+.left_text_desc_area { 
+    width: 428px;
+    height: 32px;
+    /* background-color: deeppink; */
+}
+
+/* 430 x 16 */
+.left_text_link_area {
+    width: 430px;
+    height: 16px;
+    /* background-color: lightcyan; */
+    
+    justify-content: flex-start;
+}
+
+
+.title_text_decoration {
+    font-size: 14px;
+    /* line-height: 20px; */
+    /* min-height: 24px; */
+    /* margin-bottom: 2px; */
+}    
+
+
+.title_desc_deco {
+    font-size: 12px;
+    opacity: 0.6;
+
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+    /* overflow: hidden; */
+
+
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    white-space: normal;
+    /* display: inline-block; */
+}
+
+
+
+
+.title_desc_link {
+    font-size: 12px;
+
+}
