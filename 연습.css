@@ -19,6 +19,23 @@
 }
 
 
+
+.block_left_title_container {
+    background-color: crimson;
+
+    width: calc(708px - 6px);
+    height: calc(108px - 6px);
+
+    /* 가운데로 정렬 시키기 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+
 .block_left_area {
  
     /* 1. 사이즈 */
